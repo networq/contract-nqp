@@ -1,0 +1,16 @@
+<ul class="list-group">
+  {% for c in node['networq:contract:party']['contracts'] %}
+
+    <li class="list-group-item">
+        <h3>{{ c['networq:core:node']['name'] }}</h3>
+        {{ c|nodeButton|raw }}<br />
+
+        Parties:       
+        <ul>
+        {% for p in c['networq:contract:contract']['parties'] %}
+            <li>{{ p['networq:core:node']['name'] }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+  {% endfor %}
+</ul>

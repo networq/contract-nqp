@@ -1,0 +1,7 @@
+name: contract
+labelPlural: Contracts
+labelSingular: Contract
+
+fields:
+  parties:
+    type: networq:contract:party[]

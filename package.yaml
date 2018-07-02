@@ -1,0 +1,17 @@
+name: networq:contract
+description: General Data Protection Regulation (GDPR)
+license: MIT
+
+dependencies:
+  networq:core: latest
+
+widgets:
+  partyContractsTab:
+    type: networq:contract:party
+    hook: tabs
+    label: Contracts
+
+  contractPartiesTab:
+    type: networq:contract:contract
+    hook: tabs
+    label: Parties

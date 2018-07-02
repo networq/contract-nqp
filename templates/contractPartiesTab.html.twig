@@ -1,0 +1,9 @@
+<ul class="list-group">
+  {% for p in node['networq:contract:contract']['parties'] %}
+
+    <li class="list-group-item">
+        <h3>{{ p['networq:core:node']['name'] }}</h3>
+        {{ p|nodeButton|raw }}<br />
+    </li>
+  {% endfor %}
+</ul>

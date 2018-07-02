@@ -1,0 +1,8 @@
+name: party
+labelPlural: Parties
+labelSingular: Party
+
+fields:
+  contracts:
+    type: networq:contract:contract[]
+    reverse: parties
